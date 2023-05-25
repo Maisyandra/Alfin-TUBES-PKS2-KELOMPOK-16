@@ -1,0 +1,79 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+   float pilihan, biaya, hari;
+   int nomor;
+   string nama, ulang = "Y";
+   //Harga Per-kWh   R-1/TR  R-2/TR   R-3/TR
+   float harga[3] = {1444.70,1699.53,1699.53};
+   
+   cout << "******************************************************************" << endl;
+   cout << "***       SELAMAT DATANG DI APLIKASI CEK TAGIHAN LISTRIK       ***" << endl;
+   cout << "******************************************************************" << endl;
+   cout << endl;
+   
+   while (ulang == "Y") {
+   cout << endl;
+   cout << "Masukkan nama anda : ";
+   cin >> nama;
+   cout << "Masukkan 9 digit nomor meteran : ";
+   cin >> nomor;
+   cout << endl;
+   
+   cout << "Pilih golongan listrik : " << endl;
+   cout << "1. Golongan R-1/TR" << endl;
+   cout << "2. Golongan R-2/TR" << endl;
+   cout << "3. Golongan R-3/TR" << endl;
+   cout << "--->";
+   cin >> pilihan;
+   
+   if (pilihan == 1){
+       cout << "Masukkan jumlah hari pemakaian : ";
+       cin >> hari;
+       biaya = harga[0]*hari;
+       cout << "Nomer Meter           : " << nomor << endl;
+       cout << "Nama                  : " << nama << endl;
+       cout << "Golongan              : R-1/TR " <<endl;
+       cout << "jumlah hari pemakaian : " << hari << " hari" << endl;
+       cout << "Jumlah tagihan        : " << "Rp." << biaya << endl;
+   }else if(pilihan == 2){
+       cout << "Masukkan jumlah hari pemakaian : ";
+       cin >> hari;
+       biaya = harga[1]*hari;
+       cout << "Nomer Meter           : " << nomor << endl;
+       cout << "Nama                  : " << nama << endl;
+       cout << "Golongan              : R-2/TR " <<endl;
+       cout << "jumlah hari pemakaian : " << hari << " hari" << endl;
+       cout << "Jumlah tagihan        : " << "Rp." << biaya << endl;
+   }else if(pilihan == 3){
+       cout << "Masukkan jumlah hari pemakaian : ";
+       cin >> hari;
+       biaya = harga[2]*hari;
+       cout << "Nomer Meter           : " << nomor << endl;
+       cout << "Nama                  : " << nama << endl;
+       cout << "Golongan              : R-3/TR " <<endl;
+       cout << "jumlah hari pemakaian : " << hari << " hari" << endl;
+       cout << "Jumlah tagihan        : " << "Rp." << biaya << endl;
+   }else{
+       cout << "Pilihan Anda tidak tersedia!!" << endl;
+   }cout << endl;
+    cout << "Kembali ke menu utama? ( Y / N ) : ";
+    cin >> ulang;
+    
+    while (ulang != "Y" && ulang != "N") {
+            cout << "Input tidak valid. Mohon masukkan 'Y' atau 'N': ";
+            cin >> ulang;
+}
+}
+    cout << "Terima kasih telah menggunakan program ini." << endl;
+
+    return 0;
+}
+//Alfin Mai Syandra (122130036) Teknik Elektro
+//Syaharani Putri (122130033) Teknik Elektro
+//Dermawan Hadi Putra (122130038) Teknik Elektro
+
+
