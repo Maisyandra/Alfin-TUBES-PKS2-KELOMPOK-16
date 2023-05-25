@@ -29,7 +29,10 @@ Program ini akan menghitung jumlah tagihan listrik golongan R-1/TR, R-2/TR, R-3/
 7.	Program akan menampilkan nomor meteran, nama, golongan, jumlah hari pemakaian, dan hasil tagihan listrik
 
 ## Media
-| Laporan | https://docs.google.com/document/d/1nHUoEtYZPKgVvP7eXeTvkO3JLSc-eiOk/edit?usp=share_link&ouid=102803818183349631128&rtpof=true&sd=true |
+
+| File |      link     |
+| ------ | ------ |
+| Laporan | [tempel link disini](https://docs.google.com/document/d/1nHUoEtYZPKgVvP7eXeTvkO3JLSc-eiOk/edit?usp=share_link&ouid=102803818183349631128&rtpof=true&sd=true) |
 | Program | https://github.com/Maisyandra/Alfin-TUBES-PKS2-KELOMPOK-16/tree/main |
-| Program running | https://onlinegdb.com/q3QyH9pEJ |
+| Program running | [https://replit.com/@Marchel-Samosir/Tugas-Besar-PKS-2](https://onlinegdb.com/q3QyH9pEJ) |
 | Video | tempel link disini |
